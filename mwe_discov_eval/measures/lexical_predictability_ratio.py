@@ -105,7 +105,7 @@ def gen_skipos(ngram_db, display=True):
     messages.msg('Generating skipos statistics...')
     ngram_db.connect()
     ngram_db.aggregate_by('skipos_counts', 'skipgram_counts',
-                          'freq', ['length'], ['skipos'])
+                          ['freq'], ['length'], ['skipos'])
     ngram_db.upd_info('skipos_counts')
     ngram_db.disconnect()
     messages.done()
