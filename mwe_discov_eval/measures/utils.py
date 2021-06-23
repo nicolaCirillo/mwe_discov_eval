@@ -70,6 +70,7 @@ class DatabaseManager():
             self.output_db.upd_info(self.new_tb)
         self.output_db.disconnect()
         self.del_and_rename(self.ngram_db, self.output_db)
+        self.ngram_db._load_info()
         messages.done()
 
     def new_table(self, new_table: str, new_fields: list):
