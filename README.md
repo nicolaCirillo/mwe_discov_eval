@@ -13,7 +13,7 @@ mwe_discov_eval is a package for multiword expression (MWE) discovery that allow
 
 SETUP
 -----
-
+pip install git+https://github.com/nicolaCirillo/conll_iterator.git
 
 GETTING STARTED
 ---------------
